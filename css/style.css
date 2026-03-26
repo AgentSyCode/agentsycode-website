@@ -123,6 +123,8 @@ body {
     border: none;
     transition: 0.2s;
 }
+
+/* ========== HERO SECTION - المحتوى في الجهة اليمنى ========== */
 .hero {
     position: relative;
     min-height: 90vh;
@@ -130,7 +132,7 @@ body {
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    justify-content: flex-start;  /* تم التغيير: من flex-end إلى flex-start */
+    justify-content: flex-start;
     padding: 2rem 5%;
 }
 
@@ -140,6 +142,8 @@ body {
     text-align: right;
     color: white;
     animation: fadeSlideUp 0.8s ease-out;
+    margin-right: 5%;
+    margin-left: auto;
 }
 
 .hero-content h1 {
@@ -148,6 +152,14 @@ body {
     margin-bottom: 1.2rem;
     line-height: 1.3;
     text-shadow: 0 2px 15px rgba(0,0,0,0.3);
+}
+
+.hero-content h1 .highlight {
+    background: linear-gradient(135deg, #fccf00, #6dc1e5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
 }
 
 .hero-content p {
@@ -458,6 +470,7 @@ body {
 @media (max-width: 992px) {
     .hero-content {
         width: 70%;
+        margin-right: 3%;
     }
     .hero-content h1 {
         font-size: 2.5rem;
@@ -503,6 +516,8 @@ body {
     .hero-content {
         width: 100%;
         text-align: center;
+        margin-right: 0;
+        margin-left: 0;
     }
     .hero-buttons {
         justify-content: center;
