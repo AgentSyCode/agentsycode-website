@@ -91,9 +91,9 @@ if (copyMailBtn) {
         const emailText = "support@agentsycode.com";
         navigator.clipboard.writeText(emailText).then(() => {
             const originalText = copyMailBtn.innerHTML;
-            copyMailBtn.innerHTML = 'تم النسخ! ✅';
+            copyMailBtn.innerHTML = '<i class="fas fa-check"></i> تم النسخ! ✅';
             setTimeout(() => {
-                copyMailBtn.innerHTML = originalText;
+                copyMailBtn.innerHTML = '<i class="fas fa-copy"></i> نسخ البريد الإلكتروني';
             }, 2000);
         }).catch(() => {
             alert("تعذر النسخ، يرجى المحاولة يدوياً.");
@@ -122,4 +122,4 @@ setTimeout(() => {
     if (currentActive) currentActive.classList.add('active');
 }, 100);
 
-console.log('✅ الموقع يعمل بشكل صحيح مع دعم اللغة العربية');
+console.log('✅ موقع AgentSyCode يعمل بشكل صحيح مع دعم اللغة العربية');
