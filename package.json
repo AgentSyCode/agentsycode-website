@@ -2,10 +2,8 @@
   "name": "agentsycode-website",
   "version": "1.0.0",
   "description": "AgentSyCode - موقع شركة تقنية متكامل",
-  "main": "index.html",
   "scripts": {
-    "dev": "vercel dev",
-    "deploy": "vercel deploy --prod"
+    "dev": "vercel dev"
   },
   "keywords": [
     "agentsycode",
@@ -14,11 +12,5 @@
     "modern"
   ],
   "author": "AgentSyCode",
-  "license": "MIT",
-  "dependencies": {
-    "mongodb": "^5.0.0"
-  },
-  "devDependencies": {
-    "vercel": "^32.0.0"
-  }
+  "license": "MIT"
 }
