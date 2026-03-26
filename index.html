@@ -20,7 +20,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo-area">
-                <img class="logo-img" src="assets/images/logo.png" alt="AgentSyCode Logo">
+                <img class="logo-img" src="assets/images/logo.png" alt="AgentSyCode Logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle fill=\'%23fccf00\' cx=\'50\' cy=\'50\' r=\'48\'/%3E%3Ctext fill=\'white\' x=\'50\' y=\'68\' font-size=\'38\' font-weight=\'bold\' text-anchor=\'middle\' font-family=\'Cairo\'%3EAS%3C/text%3E%3C/svg%3E'">
                 <span class="site-name">AgentSyCode</span>
             </div>
             <button class="menu-toggle" id="mobile-menu">
@@ -36,16 +36,16 @@
     </nav>
 
     <!-- قسم الهيرو -->
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>وكالة AgentSyCode <br> حيث الابتكار يلتقي الثقة</h1>
-        <p>لوريم إيبسوم هو نص تجريبي يستخدم في صناعة الطباعة والتصميم. نقدم حلولاً رقمية متكاملة تفوق التوقعات، مع فريق محترف يقود أعمالك نحو النجاح.</p>
-        <div class="hero-buttons">
-            <button class="btn-primary" id="heroContactBtn">تواصل معنا <i class="fas fa-arrow-left"></i></button>
-            <button class="btn-outline" id="heroDownloadBtn"><i class="fas fa-download"></i> حمل التطبيق</button>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>وكالة AgentSyCode <br> حيث الابتكار يلتقي الثقة</h1>
+            <p>لوريم إيبسوم هو نص تجريبي يستخدم في صناعة الطباعة والتصميم. نقدم حلولاً رقمية متكاملة تفوق التوقعات، مع فريق محترف يقود أعمالك نحو النجاح.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" id="heroContactBtn">تواصل معنا <i class="fas fa-arrow-left"></i></button>
+                <button class="btn-outline" id="heroDownloadBtn"><i class="fas fa-download"></i> حمل التطبيق</button>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- قسم المميزات -->
     <section class="features" id="features">
@@ -107,8 +107,8 @@
                     <p>واتساب: 966512345678+</p>
                 </div>
             </div>
-            <div style="margin-top: 1rem;">
-                <button class="btn-primary" style="background:#6dc1e5; color:#1e2a3e;" id="copyMailBtn">نسخ البريد الإلكتروني</button>
+            <div class="copy-btn-container">
+                <button class="btn-primary copy-mail-btn" id="copyMailBtn">نسخ البريد الإلكتروني <i class="fas fa-copy"></i></button>
             </div>
         </div>
     </section>
@@ -128,6 +128,5 @@
 
     <!-- JavaScript Files -->
     <script src="js/main.js"></script>
-    <script src="supabase/supabase-client.js"></script>
 </body>
 </html>
