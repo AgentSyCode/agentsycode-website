@@ -5,12 +5,10 @@
   "scripts": {
     "dev": "vercel dev"
   },
-  "keywords": [
-    "agentsycode",
-    "website",
-    "arabic",
-    "modern"
-  ],
-  "author": "AgentSyCode",
-  "license": "MIT"
+  "dependencies": {
+    "mongodb": "^5.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
 }
