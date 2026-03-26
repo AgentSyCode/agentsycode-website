@@ -1,17 +1,3 @@
-// ========== إعدادات اللغة العربية ==========
-// التأكد من أن التمرير سلس مع الاتجاه العربي
-document.documentElement.style.scrollBehavior = 'smooth';
-
-// تعديل اتجاه أيقونات الأسهم في الأزرار (اختياري)
-document.addEventListener('DOMContentLoaded', () => {
-    const arrows = document.querySelectorAll('.btn-primary i, .btn-outline i');
-    arrows.forEach(arrow => {
-        if (arrow.classList.contains('fa-arrow-left')) {
-            arrow.style.transform = 'rotate(0deg)';
-        }
-    });
-});
-
 // ========== MOBILE MENU TOGGLE ==========
 const menuToggle = document.getElementById('mobile-menu');
 const navLinks = document.getElementById('nav-links');
@@ -104,10 +90,10 @@ if (copyMailBtn) {
     copyMailBtn.addEventListener('click', () => {
         const emailText = "support@agentsycode.com";
         navigator.clipboard.writeText(emailText).then(() => {
-            const originalText = copyMailBtn.innerText;
-            copyMailBtn.innerText = "تم النسخ! ✅";
+            const originalText = copyMailBtn.innerHTML;
+            copyMailBtn.innerHTML = 'تم النسخ! ✅';
             setTimeout(() => {
-                copyMailBtn.innerText = originalText;
+                copyMailBtn.innerHTML = originalText;
             }, 2000);
         }).catch(() => {
             alert("تعذر النسخ، يرجى المحاولة يدوياً.");
@@ -135,3 +121,5 @@ setTimeout(() => {
     const currentActive = document.querySelector('.nav-link[href="#home"]');
     if (currentActive) currentActive.classList.add('active');
 }, 100);
+
+console.log('✅ الموقع يعمل بشكل صحيح مع دعم اللغة العربية');
