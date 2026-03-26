@@ -1,3 +1,47 @@
+/* ========== دعم اللغة العربية ========== */
+html {
+    direction: rtl;
+}
+
+body {
+    text-align: right;
+}
+
+/* تعديل اتجاه الأزرار */
+.hero-buttons {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+/* تعديل اتجاه البطاقات */
+.feature-card {
+    text-align: center;
+}
+
+/* تعديل أيقونات الأسهم */
+.btn-primary i, .btn-outline i {
+    transform: rotate(0deg);
+    margin-right: 8px;
+    margin-left: 0;
+}
+
+/* تعديل القائمة المنسدلة للعربية */
+.nav-links {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        right: -100%;
+        left: auto;
+    }
+    .nav-links.active {
+        right: 0;
+        left: auto;
+    }
+}
+
 /* ========== RESET & GLOBAL ========== */
 * {
     margin: 0;
