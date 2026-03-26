@@ -123,8 +123,6 @@ body {
     border: none;
     transition: 0.2s;
 }
-
-/* ========== HERO SECTION ========== */
 .hero {
     position: relative;
     min-height: 90vh;
@@ -132,7 +130,7 @@ body {
     background-attachment: fixed;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;  /* تم التغيير: من flex-end إلى flex-start */
     padding: 2rem 5%;
 }
 
